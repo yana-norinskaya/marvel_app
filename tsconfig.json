@@ -18,9 +18,14 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "paths": {
+      "*": ["./src/*"]
+    },
+    "typeRoots": ["typings/**/*.d.ts", "node_modules/@types"]
   },
   "include": [
-    "src"
+    "src",
+    ".eslintrc.js"
   ]
 }

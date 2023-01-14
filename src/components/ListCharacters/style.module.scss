@@ -1,0 +1,30 @@
+@import "../../styles/global";
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  gap: 20px;
+  li{
+    background: $dark;
+    width: 200px;
+    height: 318px;
+    cursor: pointer;
+    transition: all 300ms ease;
+    img{
+      width: 200px;
+      height: 170px;
+      object-fit: cover;
+    }
+    &:hover{
+      box-shadow: 1px 3px 10px 2px $primary;
+      transform: translateY(-5px);
+    }
+    p{
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 26px;
+      color: white;
+      padding: 15px;
+    }
+  }
+}
