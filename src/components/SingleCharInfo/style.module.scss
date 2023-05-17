@@ -1,20 +1,20 @@
-.wrap{
+.wrap {
   display: grid;
   grid-template-columns: 293px 550px;
   gap: 40px;
   padding-top: 40px;
-  img{
+  img {
     width: 293px;
     height: 293px;
     object-fit: cover;
   }
-  .name{
+  .name {
     font-weight: 700;
     font-size: 22px;
     line-height: 26px;
     color: #000000;
   }
-  .descr{
+  .descr {
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;

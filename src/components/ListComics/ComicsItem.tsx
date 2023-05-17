@@ -1,23 +1,21 @@
-import React, {FC} from "react";
-import {Result} from "types/comics.type";
-import {Link} from "react-router-dom";
+import React, { FC } from "react";
+import { Result } from "types/comics.type";
+import { Link } from "react-router-dom";
 import styles from "./style.module.scss";
 
-import {useFormatDateComics, useGetComicsId} from "../../hooks";
+import { useFormatDataComics, useGetComicsId } from "../../hooks";
 
 export const ComicsItem: FC<Result> = (comics) => {
-    const {imageContent, id, priceContent, title} = useFormatDateComics(comics);
-    const {handleGetCurrentId} = useGetComicsId()
+  const { imageContent, id, priceContent, title } = useFormatDataComics(comics);
+  const { handleGetCurrentId } = useGetComicsId();
 
-    return (
-        <li onClick={() => handleGetCurrentId(id)}>
-            <Link to={`/comics/${id}`}>
-            <img src={imageContent} alt={title}/>
-            <p className={styles.name}>{title}</p>
-                <p className={styles.price}>
-                    {priceContent}
-                </p>
-            </Link>
-        </li>
-    )
-}
+  return (
+    <li onClick={() => handleGetCurrentId(id)}>
+      <Link to={`/comics/${id}`}>
+        <img src={imageContent} alt={title} />
+        <p className={styles.name}>{title}</p>
+        <p className={styles.price}>{priceContent}</p>
+      </Link>
+    </li>
+  );
+};

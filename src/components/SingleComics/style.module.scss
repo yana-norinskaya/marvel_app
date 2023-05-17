@@ -1,6 +1,6 @@
 @import "../../styles/global";
 
-.grid{
+.grid {
   display: grid;
   grid-template-columns: 293px 550px auto;
   column-gap: 50px;
@@ -11,30 +11,30 @@
     width: 293px;
     height: 450px;
   }
-  h2{
+  h2 {
     font-weight: 700;
     font-size: 22px;
     line-height: 26px;
   }
-  p{
+  p {
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
     padding-top: 30px;
   }
-  .price{
+  .price {
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
     color: $primary;
   }
-  .link{
+  .link {
     font-weight: 700;
     font-size: 18px;
     line-height: 21px;
     justify-self: end;
     transition: all 0.3s ease;
-    &:hover{
+    &:hover {
       color: $primary;
     }
   }

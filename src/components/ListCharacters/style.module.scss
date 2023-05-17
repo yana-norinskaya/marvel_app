@@ -1,25 +1,25 @@
 @import "../../styles/global";
 
-.grid{
+.grid {
   display: grid;
   grid-template-columns: repeat(3, 200px);
   gap: 20px;
-  li{
+  li {
     background: $dark;
     width: 200px;
     height: 318px;
     cursor: pointer;
     transition: all 300ms ease;
-    img{
+    img {
       width: 200px;
       height: 170px;
       object-fit: cover;
     }
-    &:hover{
+    &:hover {
       box-shadow: 1px 3px 10px 2px $primary;
       transform: translateY(-5px);
     }
-    p{
+    p {
       font-weight: 700;
       font-size: 22px;
       line-height: 26px;

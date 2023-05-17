@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 interface IFlex {
-    cursor?: string;
-    direction?: string;
-    align?: string;
-    justify?: string;
-    padding?: string;
+  cursor?: string;
+  direction?: string;
+  align?: string;
+  justify?: string;
+  padding?: string;
 }
 export const Flex = styled.div<IFlex>`
   display: flex;
